@@ -20,7 +20,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
   margin: auto;
-  background-image: linear-gradient(70deg, #F94144, #F3722C, #F9C74F, #90BE6D, #57BED6, #9C71D4);
+  background-image: linear-gradient(70deg, #57BED6, #9C71D4, #000000);
 }
 
 #main-header{
@@ -170,7 +170,7 @@ img {
   }
 }
 
-.quote_card{
+.apod_card{
   height: 410px;
   width: 250px;
   float: left;
@@ -198,7 +198,7 @@ img {
   left: 34px;
 }
 
-.quote{
+.apod{
   display: flex;
   font-size: 15pt;
   margin: 10px;

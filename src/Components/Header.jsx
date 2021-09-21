@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => (
   <div>
-    <h1 id="main-header">Inspirational Book Quotes</h1>
+    <h1 id="main-header">Nasa's Cosmic Pictures </h1>
   </div>
 );
 
