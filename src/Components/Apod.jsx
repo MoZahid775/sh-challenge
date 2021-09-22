@@ -40,7 +40,7 @@ export default class Apod extends Component {
   render() {
       console.log(this.props)
       
-      let {date, explanation, hdurl, title} = this.props.apod
+      let {date, explanation, url, title} = this.props.apod
       console.log(date)
            if(this.state.delete){
 
@@ -53,7 +53,7 @@ export default class Apod extends Component {
               <button onClick={this.toggleShowingFront}>CLICK HERE FOR DETAILS</button>
              {this.state.showingFront?
                <Card.Content >
-                 <Image src={hdurl} alt={title}></Image>
+                 <Image src={url} alt={title}></Image>
                  <Card.Header className="quote">{title}</Card.Header>
                  <Card.Description className="quote">Date: {date}</Card.Description>
                    <Card.Description className="author_info">
