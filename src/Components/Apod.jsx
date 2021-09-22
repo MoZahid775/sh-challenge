@@ -1,6 +1,6 @@
-import { tsParenthesizedType } from '@babel/types';
+// import { tsParenthesizedType } from '@babel/types';
 import React, { Component } from 'react';
-import { Card, Image } from 'semantic-ui-react'
+import { Card, Image, Button } from 'semantic-ui-react'
 
 export default class Apod extends Component {
   state = {       
@@ -49,8 +49,8 @@ export default class Apod extends Component {
         
            return (
         
-            <Card className="apod_card">
-              <button onClick={this.toggleShowingFront}>CLICK HERE FOR DETAILS</button>
+            <Card className="apod_card" >
+              <button class="ui button" onClick={this.toggleShowingFront}>CLICK HERE FOR DETAILS </button>
              {this.state.showingFront?
                <Card.Content >
                  <Image src={url} alt={title}></Image>
@@ -58,7 +58,7 @@ export default class Apod extends Component {
                  <Card.Description className="quote">Date: {date}</Card.Description>
                    <Card.Description className="author_info">
                      {this.state.like ? <button onClick={this.toggleLike}>🖤</button> :<button onClick={this.toggleLike} >♡</button>}
-                     <button onClick={this.toggleDelete}>delete</button>
+                     <button onClick={this.toggleDelete}>DELETE</button>
                    </Card.Description>
                </Card.Content>
                :  

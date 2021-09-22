@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Components/Header';
 import ApodContainer from './Components/ApodContainer';
-// import SearchBar from './Components/SearchBar';
+import Footer from './Components/Footer';
 
 
 export default class App extends Component {
@@ -44,21 +44,15 @@ export default class App extends Component {
   render() {
    
     let arrayOfApods = this.state.apods
-    // let newArrayofQuotes = arrayOfQuotes.filter((arrayObj) => { 
-    //   if(this.state.favoritesFilterActive){
-    //   return (arrayObj.favorite == true)
-    //   } else {
-    //   return (arrayObj.author.toLowerCase().includes(this.state.filter.toLowerCase()) || arrayObj.source.toLowerCase().includes(this.state.filter.toLowerCase()))}
-    // })
     
 
 
 
     return (
-      <div id="appjs">
+      <div id="appjs" >
       <Header />
-      {/* <SearchBar filter={this.state.filter} updateFilterState={this.updateFilterState} /> */}
       <ApodContainer arrayOfApods={arrayOfApods} deleteApod={this.deleteApod} />  
+      <Footer />
       </div>
     )
   }

@@ -5,7 +5,7 @@
 }
 
 html {
-  background-color: #f0f0f0;
+  background-color: #000000;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 1rem;
+  /* padding: 1rem; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,10 +37,10 @@ body {
   text-align: center;
 }
 
-input[type='checkbox']{
+/* input[type='checkbox']{
   text-align: center;
-}
-
+} */
+/* 
 .search {
   width: 50%;
   text-align: center;
@@ -59,7 +59,7 @@ input[type='checkbox']{
   border-radius: 10px;
   outline: none;
   font-size: 1.5rem;
-}
+} */
 
 .addForm {
   text-align: center;
@@ -209,20 +209,23 @@ img {
 
 button{
   margin: 10px;
+
 }
 
 .subtitle{
   text-align: center;
   color: rgb(240, 255, 255, .8);
   font-size: 25pt;
-
-
 }
 
 #appjs{
   background-image: url('https://cdn.wallpapersafari.com/68/31/e0RoPS.jpg');
-  
-  
+ 
+}
 
-
+.smallText{
+  text-align: center;
+  color: rgb(240, 255, 255, .8);
+  font-size: 12pt;
+  padding-bottom: 15pt;
 }
