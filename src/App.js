@@ -55,7 +55,7 @@ export default class App extends Component {
 
 
     return (
-      <div>
+      <div id="appjs">
       <Header />
       {/* <SearchBar filter={this.state.filter} updateFilterState={this.updateFilterState} /> */}
       <ApodContainer arrayOfApods={arrayOfApods} deleteApod={this.deleteApod} />  
