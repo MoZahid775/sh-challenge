@@ -2,17 +2,18 @@ import React from 'react';
 import Apod from './Apod';
 
 const ApodContainer = (props) => {
-// console.log(props.updateFavoriteOnState)
+
+
   let arrayOfComp = props.arrayOfApods.map(apodObj => {
 
-    console.log(apodObj)
-    return < Apod key={apodObj.id} apod={apodObj}  updateLikesOnState={props.updateLikesOnState} updateFavoriteOnState={props.updateFavoriteOnState} />
-    // deleteQuote={props.deleteQuote}
+    console.log(props.deleteApod)
+    return < Apod key={apodObj.id} apod={apodObj} deleteApod={props.deleteApod} />
+    
   });
 
   return (
   <div>
-    <h3>Click on quote for to see source details</h3>
+    <h2 className="subtitle">Brought to you by Nasa's Image API</h2>
     <ul className="cards">    
       {arrayOfComp}
     </ul>
